@@ -20,7 +20,6 @@ const HomeCountries = () => {
     useEffect(() => {
         countriesServices.getAllCountries()
           .then((response)=> setdataCountries(response.data));
-          
       }, [])
     
       console.log(dataCountries);
