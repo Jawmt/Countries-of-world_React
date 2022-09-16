@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import DisplayCountry from '../features/countries/DisplayCountry'
+import Filter from '../features/filters/layout/Filter';
 import { countriesServices } from '../services/countriesService';
 
 /**
@@ -18,15 +19,30 @@ const HomeCountries = () => {
      * useEffect to set dataCountries with the response of the call API 
      */
     useEffect(() => {
-        countriesServices.getAllCountries()
-          .then((response)=> setdataCountries(response.data));
+        getAllCountries();
       }, [])
     
-      console.log(dataCountries);
+    /**
+     * Get All countries from the API
+     */
+    const getAllCountries = () => {
+      countriesServices.getAllCountries()
+          .then((response)=> setdataCountries(response.data));
+    }
+
+    /**
+     * Retrieve countries by region from API
+     */
+      const getCountriesByRegion = (region) => {
+        countriesServices.getCountriesByRegion(region)
+          .then((response) => setdataCountries(response.data));
+      }
+    
     
     return (
       <>
         <h1>HomeCountries</h1>
+        <Filter getCountriesByRegion={getCountriesByRegion} getAllCountries={getAllCountries} />
         {dataCountries.map((country, index) => (
             <DisplayCountry country={country} key={index} />
         ))}
