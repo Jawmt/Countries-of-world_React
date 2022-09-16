@@ -1,16 +1,17 @@
 import React from 'react'
 import Select from 'react-select'
+import FilterSearch from '../component/FilterSearch'
 
 
 const Filter = (props) => {
 
   const options = [
-    { value: 'all', label:'All Countries'},
-    { value: 'africa', label: 'Africa' },
-    { value: 'americas', label: 'Americas' },
-    { value: 'asia', label: 'Asia' },
-    { value: 'europe', label: 'Europe' },
-    { value: 'oceania', label: 'Oceania' },
+    { value: '', label:'All Countries'},
+    { value: 'Africa', label: 'Africa' },
+    { value: 'Americas', label: 'Americas' },
+    { value: 'Asia', label: 'Asia' },
+    { value: 'Europe', label: 'Europe' },
+    { value: 'Oceania', label: 'Oceania' },
   ]
 
   const handleChange = (e) => {
@@ -18,9 +19,14 @@ const Filter = (props) => {
     else props.getAllCountries();
   }
 
+  const handleSearch = (searchValue) => {
+    props.searchCountry(searchValue);
+  }
+
 
   return (
     <>
+        <FilterSearch handleSearch={handleSearch}/>
         <Select options={options} onChange={handleChange} />
     </>
   )

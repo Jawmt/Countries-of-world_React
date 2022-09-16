@@ -1,6 +1,4 @@
 import './App.css';
-import { useEffect, useState } from 'react'
-import { countriesServices } from './services/countriesService';
 import HomeCountries from './pages/HomeCountries';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import DetailCountry from './pages/DetailCountry';
@@ -16,7 +14,7 @@ function App() {
       </Route>
       <Route path="/" element={<Navigate to="/countries" />}/>
     </Routes>
-  );
+  );      
 }
 
 export default App;
