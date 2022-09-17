@@ -15,12 +15,11 @@ const Filter = (props) => {
   ]
 
   const handleChange = (e) => {
-    if(e.value !== "all") props.getCountriesByRegion(e.value);
-    else props.getAllCountries();
+    props.handleChangeRegion(e.value);
   }
 
   const handleSearch = (searchValue) => {
-    props.searchCountry(searchValue);
+    props.handleChangeSearch(searchValue);
   }
 
 
