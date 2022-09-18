@@ -11,9 +11,9 @@ const DisplayCountry = ({country}) => {
 
   const navigate = useNavigate();
 
-
+  
   return (
-    <div onClick={()=>navigate(`/countries/${country.name.common}`)}>
+    <div className='card' onClick={()=>navigate(`/countries/${country.name.common}`)}>
       <img src={country.flags.png} alt={country.name.common} />
       <h4>{country.name.common}</h4>
       <p>Population : {country.population}</p>

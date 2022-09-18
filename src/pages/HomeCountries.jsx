@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import DisplayCountry from '../features/countries/DisplayCountry'
 import Filter from '../features/filters/layout/Filter';
-
+import '../assets/styles/homeCountries.css'
 /**
  * 
  * @returns Display of every countries from the API 
@@ -36,9 +36,12 @@ const HomeCountries = (props) => {
           handleChangeRegion={handleChangeRegion}
           handleChangeSearch={handleChangeSearch}
           />
-        {filter().map((country, index) => (
-            <DisplayCountry country={country} key={index} />
-        ))}
+        <div className='container'>
+          {filter().map((country, index) => (
+              <DisplayCountry country={country} key={index} />
+          ))}
+        </div>
+        
     </>
   )
 }

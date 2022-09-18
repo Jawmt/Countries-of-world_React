@@ -1,6 +1,7 @@
 import React from 'react'
 import Select from 'react-select'
 import FilterSearch from '../component/FilterSearch'
+import '../../../assets/styles/filter.css'
 
 
 const Filter = (props) => {

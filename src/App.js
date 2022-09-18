@@ -8,12 +8,12 @@ import { countriesServices } from './services/countriesService';
 function App() {
   
   const [data, setData] = useState([]);
+
   /**
      * useEffect to set dataCountries with the response of the call API 
      */
     useEffect(() => {
       getAllCountries(); 
-      console.log("ok");
       },[])
 
 /**
@@ -30,7 +30,7 @@ function App() {
     <Routes>
       <Route path="/countries" >
         <Route path="" element={<HomeCountries data={data}/>}/>
-        <Route path=":id" element={<DetailCountry />}/>
+        <Route path=":id" element={<DetailCountry data={data} />}/>
       </Route>
       <Route path="/" element={<Navigate to="/countries" />}/>
     </Routes>
