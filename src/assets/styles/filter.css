@@ -1,0 +1,17 @@
+.filter{
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+}
+
+.filter > input  {
+    background-color: hsl(209, 23%, 22%);
+    color:white;
+    border: 0;
+    width: 500px;
+    padding:10px 15px;
+}
+
+.liste {
+    background-color: hsl(209, 23%, 22%) !important;
+}

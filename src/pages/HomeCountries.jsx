@@ -13,7 +13,6 @@ const HomeCountries = (props) => {
     */
     const [region,setRegion] = useState('');
     const [valueSearch, setValueSearch] = useState('');
-
     
 
     const filter = () => {
@@ -31,7 +30,6 @@ const HomeCountries = (props) => {
 
     return (
       <>
-        <h1>HomeCountries</h1>
         <Filter 
           handleChangeRegion={handleChangeRegion}
           handleChangeSearch={handleChangeSearch}

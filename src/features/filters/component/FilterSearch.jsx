@@ -11,7 +11,13 @@ const FilterSearch = (props) => {
     }
 
     return (
-        <input type="text" value={searchValue} onChange={handleChange}/>
+        <input 
+            type="text" 
+            value={searchValue} 
+            onChange={handleChange}
+            placeholder="Search for a country"
+            
+        />
     )
 }
 

@@ -4,6 +4,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import DetailCountry from './pages/DetailCountry';
 import { useEffect, useState } from 'react';
 import { countriesServices } from './services/countriesService';
+import Header from './features/component/Header';
 
 function App() {
   
@@ -25,15 +26,19 @@ function App() {
             setData(response.data);
         })     
   }
-  
+
   return (
-    <Routes>
-      <Route path="/countries" >
-        <Route path="" element={<HomeCountries data={data}/>}/>
-        <Route path=":id" element={<DetailCountry data={data} />}/>
-      </Route>
-      <Route path="/" element={<Navigate to="/countries" />}/>
-    </Routes>
+      <>
+        <Header />
+        <Routes>
+          <Route path="/countries" >
+            <Route path="" element={<HomeCountries data={data}/>}/>
+            <Route path=":id" element={<DetailCountry data={data} />}/>
+          </Route>
+          <Route path="/" element={<Navigate to="/countries" />}/>
+        </Routes>
+      </>
+
   );      
 }
 
