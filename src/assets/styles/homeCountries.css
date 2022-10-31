@@ -1,10 +1,14 @@
+.home{
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     row-gap: 4rem;
     column-gap:4rem;
-    padding:0 1rem;
     box-sizing: border-box;
     margin-top: 4rem;
 }
@@ -14,6 +18,10 @@
     border-radius: 5px;
     width: 290px;
     height: 370px;
+}
+
+.card:hover {
+    cursor: pointer;
 }
 
 .description{

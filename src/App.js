@@ -4,7 +4,7 @@ import { Navigate, Route, Routes } from 'react-router-dom';
 import DetailCountry from './pages/DetailCountry';
 import { useEffect, useState } from 'react';
 import { countriesServices } from './services/countriesService';
-import Header from './features/component/Header';
+import Header from './components/Header';
 
 function App() {
   

@@ -29,7 +29,7 @@ const HomeCountries = (props) => {
     }
 
     return (
-      <>
+      <div className='home'>
         <Filter 
           handleChangeRegion={handleChangeRegion}
           handleChangeSearch={handleChangeSearch}
@@ -40,7 +40,7 @@ const HomeCountries = (props) => {
           ))}
         </div>
         
-    </>
+    </div>
   )
 }
 

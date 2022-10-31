@@ -1,0 +1,45 @@
+.description {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+
+.btn-goBack{
+    margin: 3rem 0;
+    background-color: hsl(209, 23%, 22%);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 1.rem;
+    padding: 10px 25px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.container-info{
+    display: flex;
+}
+
+.flag{
+    width: 30vw;
+}
+
+.country-info{
+    margin-left: 5vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.infos-country{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.country-info-right{
+    margin-right: 5vw;
+}
+
+.title {
+    font-weight: 700;
+}
