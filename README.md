@@ -8,7 +8,7 @@
   <p align="center">
     Project linked to a challenge taken from the site of the frontendmentor site, the application connects to a public API and makes it possible to display information from the countries of the world.
     <br />
-    <a href="https://countries-api-jawmt.netlify.app"><strong>Check the project !</strong></a>
+    <a href="https://countries-api-jawmt.netlify.app" target="_blank"><strong>Check the project !</strong></a>
     <br />
     <br />
   </p>
