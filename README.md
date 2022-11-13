@@ -1,4 +1,25 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  
+
+  <h3 align="center">Pays du Monde</h3>
+
+  <p align="center">
+    Project linked to a challenge taken from the site of the frontendmentor site, the application connects to a public API and makes it possible to display information from the countries of the world.
+    <br />
+    <a href="https://countries-api-jawmt.netlify.app"><strong>Check the project !</strong></a>
+    <br />
+    <br />
+  </p>
+</div>
+
+<!-- ABOUT THE PROJECT -->
+## Preview of The Project
+
+[![Product Name Screen Shot][product-screenshot]](https://countries-api-jawmt.netlify.app)
+
+# Getting Started 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +89,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+
+[product-screenshot]: desktop-preview.png
