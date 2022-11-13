@@ -3,7 +3,7 @@
 <div align="center">
   
 
-  <h3 align="center">Pays du Monde</h3>
+  <h3 align="center">Countries of World</h3>
 
   <p align="center">
     Project linked to a challenge taken from the site of the frontendmentor site, the application connects to a public API and makes it possible to display information from the countries of the world.
