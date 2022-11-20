@@ -16,7 +16,8 @@
 <!-- ABOUT THE PROJECT -->
 ## Preview of The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://countries-api-jawmt.netlify.app)
+![Design preview for the website](./desktop-preview.png)
+
 
 # Getting Started 
 
